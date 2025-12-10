@@ -1,2 +1,8 @@
 # Phishing-Website-Detection-Using-Machine-Learning
 BA810 Supervised Machine Learning team project
+
+Project Contributors:
+Sambisha Godi, Pin-Chen Kuo, Anton Falk, Adam Schuler, Sarah Dsouza
+
+Project Summary: Phishing Detection System
+This project addressed the pervasive cyber threat of phishing by developing and evaluating a machine learning system capable of classifying websites as legitimate (0) or phishing (1). We utilized the PhiUSIIL Phishing URL Dataset, comprising 235,795 samples, to extract URL-based, domain-based, and content-based features. Exploratory data analysis identified key phishing patterns, including unusually long URLs, the use of IP addresses, and high ObfuscationRatio and CharContinuationRate. Scammers also employed visual deception (high URL similarity index) and suspicious content behavior, such as placing password fields unexpectedly or using external submit buttons. After performing feature selection and cross-validation, multiple models—including Logistic Regression, Naive Bayes, Decision Tree, SVM, and Random Forest—were trained and benchmarked. The results confirmed that the Random Forest model achieved the highest ROC-AUC among individual classifiers. However, the Ensemble Voting model, which combined all constituent ML models, ultimately delivered the superior overall accuracy and the minimum misclassification cost, establishing it as the optimal detection method for deployment. This project reinforced that achieving trustworthiness in cybersecurity analytics requires not only high performance but also critical validation against potential data leakage and cost-sensitive evaluation.
